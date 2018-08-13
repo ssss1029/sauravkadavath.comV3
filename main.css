@@ -54,18 +54,24 @@ table {
 
 /* BEGIN FONTS */
 
-.section h1 {
+h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 300;
 }
 
-.section h2 {
+h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
     margin-top:20px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .section a {
@@ -148,6 +154,7 @@ table {
 
 #about {
     background-color: #1A237E;
+    position: relative;
 }
 
 .content.about {
@@ -191,4 +198,13 @@ table {
     border-width: 70px 70px 70px 70px;
     border-color: #3F51B5 #3F51B5 #1A237E #1A237E;
     float:right;
+}
+
+/* Copyright */
+
+.copyright {
+    position: absolute;
+    bottom:0px;
+    color: #FFFFFF;
+    padding: 20px;
 }
