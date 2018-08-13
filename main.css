@@ -1,0 +1,194 @@
+
+/*  BEGIN CSS RESET  */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  END CSS RESET  */
+
+/* BEGIN FONTS */
+
+.section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top:20px;
+}
+
+.section a {
+    color: inherit;
+    border-bottom: 1px solid currentColor; /* Or whatever color you want */
+    text-decoration: none;
+}
+
+/* END FONTS */
+
+.section {
+    min-height: 98vh;
+    width: calc(98vw - (100vw - 100%));
+    border-left: 1vw solid #FFFFFF;
+    border-right: 1vw solid #FFFFFF;
+    border-top: 1vh solid #FFFFFF;
+    border-bottom: 1vh solid #FFFFFF;
+}
+
+#landing {
+    background-color: #673AB7;
+}
+
+.content.landing {
+    min-height: 20vh;
+    width: 60vw;
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+    display:flex;
+    flex-direction: row;
+    color:#FFFFFF
+}
+
+.content.landing .triangle {
+    flex-grow:0;
+    border-color: #673AB7 #9575CD #9575CD #673AB7;
+}
+
+.content.landing .hero {
+    flex-grow:1;
+    padding-left: 30px;
+}
+
+.triangle {
+    border-style: solid;
+    border-width: 35px 35px 35px 35px;
+    height: 0px;
+    width: 0px;
+}
+
+/* WORK */
+
+#work {
+    background-color: #FAFAFA;
+}
+
+.content.work {
+    min-height: 20vh;
+    width: 60vw;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    display:flex;
+    flex-direction: row;
+    color:#000000;
+    margin-bottom: 20vh;
+}
+
+.content.work .triangle {
+    flex-grow:0;
+    border-color: #FAFAFA #424242 #424242 #FAFAFA;
+}
+
+.content.work .hero {
+    flex-grow:1;
+    padding-left: 30px;
+}
+
+/* ABOUT */
+
+#about {
+    background-color: #1A237E;
+}
+
+.content.about {
+    min-height: 20vh;
+    width: 60vw;
+    position: relative;
+    left: 20vw;
+    top: 25vh;
+    display:flex;
+    flex-direction: row;
+    color:#FFFFFF
+}
+
+.content.about .triangle {
+    flex-grow:0;
+    border-color: #1A237E #FFFFFF #FFFFFF #1A237E;
+}
+
+.content.about .hero {
+    flex-grow:1;
+}
+
+.hero .left {
+    float: left;
+    height: 100%;
+    width: calc(40% - 20.5px);
+    text-align: right;
+    padding-right: 20px;
+    border-right: 0px solid #FFFFFF;
+}
+
+.hero .right {
+    float: right;
+    height: 100%;
+    width: calc(60% - 20.5px);
+    padding-left: 20px;
+    border-left: 0px solid #FFFFFF; /* taken care of by right */
+}
+
+.hero .left .triangle {
+    border-width: 70px 70px 70px 70px;
+    border-color: #3F51B5 #3F51B5 #1A237E #1A237E;
+    float:right;
+}
