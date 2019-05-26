@@ -200,6 +200,30 @@ h3 {
     float:right;
 }
 
+.hero ul {
+    list-style-type: square;
+    list-style-position: unset;
+    margin-left:40px;
+    margin-top:5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.hero li {
+    margin-top:15px;
+}
+
+.heading {
+    padding-top:20px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+i {
+    font-style: italic
+}
+
 /* Copyright */
 
 .copyright {
