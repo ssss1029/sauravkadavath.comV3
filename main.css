@@ -200,7 +200,7 @@ h3 {
     float:right;
 }
 
-.hero ul {
+.papersul {
     list-style-type: square;
     list-style-position: unset;
     margin-left:40px;
@@ -210,9 +210,9 @@ h3 {
     font-weight: 300;
 }
 
-.hero li {
+.paperli {
     margin-top:15px;
-    line-height: 22px;
+    line-height: 27px;
 }
 
 .heading {
@@ -221,12 +221,19 @@ h3 {
     font-weight: bold;
 }
 
-i {
+.italc {
     font-style: italic
 }
 
-/* Copyright */
+.underline {
+    border-bottom: 1px solid currentColor; /* Or whatever color you want */
+}
 
+.bold {
+    font-weight: bold;
+}
+
+/* Copyright */
 .copyright {
     position: absolute;
     bottom:0px;
