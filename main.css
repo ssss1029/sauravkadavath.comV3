@@ -52,6 +52,11 @@ table {
   
 /*  END CSS RESET  */
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* BEGIN FONTS */
 
 h1 {
@@ -105,8 +110,6 @@ h3 {
     position: absolute;
     left: 10vw;
     top: 40vh;
-    display:flex;
-    flex-direction: row;
     color:#FFFFFF
 }
 
@@ -126,6 +129,97 @@ h3 {
     height: 0px;
     width: 0px;
 }
+.landing_top {
+    display: flex;
+    flex-direction: row;
+}
+
+.landing_bottom {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing_bottom_section {
+    width:33%;
+}
+
+.landing_bottom_section .button_wrapper {
+    margin: 0 auto;
+}
+
+.landing_bottom_section .button_wrapper .btn {
+    position: relative;
+
+    display: block;
+    margin: 30px auto;
+    padding: 5px 40px;
+    width:100%;
+
+    overflow: hidden;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, .6); */
+
+    background-color: #2ecc71;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.landing_bottom_section .button_wrapper .btn > * {
+    position: relative;
+}
+
+.landing_bottom_section .button_wrapper .btn span {
+    display: block;
+    padding: 12px 24px;
+}
+
+.landing_bottom_section .button_wrapper .btn:before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 0;
+    padding-top: 0;
+        
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, .3);
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.landing_bottom_section .button_wrapper .btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.landing_bottom_section .button_wrapper .btn.blue {
+    background-color: rgb(30, 39, 146);
+}
+
+.landing_bottom_section .button_wrapper .btn.blue:hover {
+    background-color: rgb(10, 17, 88);
+}
+
 
 /* WORK */
 
