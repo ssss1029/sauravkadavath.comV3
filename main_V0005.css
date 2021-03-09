@@ -110,7 +110,7 @@ h3 {
 
 .content.landing {
     min-height: 20vh;
-    width: 60vw;
+    width: 75vw;
     position: absolute;
     left: 10vw;
     top: 40vh;
@@ -145,7 +145,7 @@ h3 {
 }
 
 .landing_bottom_section {
-    width:33%;
+    width:49%;
 }
 
 .btn:hover {
